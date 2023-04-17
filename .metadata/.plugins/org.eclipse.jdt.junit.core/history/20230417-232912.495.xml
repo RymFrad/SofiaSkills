@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="testRunner" project="my-app" tests="2" started="2" failures="1" errors="0" ignored="0">
+  <testsuite name="options.testRunner" time="15.851">
+    <testsuite name="Feature: Login functionlity" time="15.851">
+      <testcase name="Home page login ok" classname="Login functionlity" time="9.147">
+        <failure>
+          <expected>Sofia tech</expected>
+          <actual>Profile</actual>
+          org.junit.ComparisonFailure: expected:&lt;[Sofia tech]&gt; but was:&lt;[Profile]&gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:115)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:144)&#13;
+	at stepdefinitions.login_stepdefinition.i_should_be_in_profile_page(login_stepdefinition.java:44)&#13;
+	at ✽.I should be in profile page(file:src/test/java/features/logintest.feature:7)&#13;
+&#13;
+
+        </failure>
+      </testcase>
+      <testcase name="Home page login Nok" classname="Login functionlity" time="6.703"/>
+    </testsuite>
+  </testsuite>
+</testrun>

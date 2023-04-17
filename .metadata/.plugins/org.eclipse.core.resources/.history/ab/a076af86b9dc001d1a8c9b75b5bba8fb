@@ -1,0 +1,15 @@
+Feature: Login functionlity
+
+  Scenario: Home page login ok
+    Given I visit login page
+    When I enter "email" in the user name field and "pwd" in the passwrd field
+    And I click in login button
+    Then I should be in profile page
+
+  Scenario: Home page login Nok
+    Given I visit login page
+    When I enter "email" in the user name field and "pwd" in the passwrd field
+    And I click in login button
+    Then Error message is shown "Address email or password incorrect"
+       
+ 
