@@ -1,0 +1,13 @@
+Feature: Import User file Functionality
+
+Scenario: Import User file Successfully
+Given I am on the login page
+When I log in as an administrator with valid email "taib.maaoui@gmail.com" and a valid password "sJ4rL7om"
+And I click the login button
+Then I should be redirected to the profile page
+And I click on the User Configuration option
+And I select the Import file option
+Then I choose an excel file and i click on open button 
+Then A confirmation window should be open with a message Do you want to upload this file  
+And I click Yes button
+Then a message should be displayed saying file is uploaded successfully.

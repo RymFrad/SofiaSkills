@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="adduser_testRunner" project="my-app" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="options.adduser_testRunner" time="39.762">
+    <testsuite name="Feature: Add User Functionality" time="39.762">
+      <testcase name="Add User Successfully" classname="Add User Functionality" time="25.205"/>
+      <testcase name="Import User file Successfully" classname="Add User Functionality" time="14.555"/>
+    </testsuite>
+  </testsuite>
+</testrun>

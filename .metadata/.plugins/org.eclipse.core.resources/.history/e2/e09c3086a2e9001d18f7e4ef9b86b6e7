@@ -1,0 +1,60 @@
+package stepdefinitions;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import java.io.IOException;
+
+
+import cucumber.api.java.en.Then;
+
+
+public class importfile_stepdefinition {
+public  static WebDriver driver; 
+
+	
+
+	@Then("I select the Import file option")
+	public void i_select_the_Import_file_option() throws InterruptedException {
+		 WebElement getimportbutton = driver.findElement(By.xpath("/html/body/app-root/app-full-layout/div/mat-sidenav-container/mat-sidenav-content/div/app-user-list/mat-card/div[1]/p-toolbar/div/div[2]/button"));
+		    Thread.sleep(1000);
+		    getimportbutton.click();
+		    Thread.sleep(1000);
+			System.out.println("OK2");
+	}
+
+
+@Then("I choose an excel file and i click on open button")
+public void i_choose_an_excel_file_and_i_click_on_open_button() throws IOException, InterruptedException {
+	Runtime.getRuntime().exec("C:\\Users\\user\\Desktop\\FileUploadScript.exe");
+    Thread.sleep(3000);
+    System.out.println("Ok3");
+
+	}
+
+
+	@Then("A confirmation window should be open with a message Do you want to upload this file")
+	public void a_confirmation_window_should_be_open_with_a_message_Do_you_want_to_upload_this_file() {
+		System.out.println("Do you want to upload this file");
+
+	}
+
+	@Then("I click Yes button")
+	public void i_click_Yes_button() throws InterruptedException {
+		WebElement getyesbutton = driver.findElement(By.xpath("//span[normalize-space()='Yes']"));
+	    getyesbutton.click();
+	    Thread.sleep(2000);
+		System.out.println("OK4");
+	}
+
+	@Then("a message should be displayed saying file is uploaded successfully.")
+	public void a_message_should_be_displayed_saying_file_is_uploaded_successfully() {
+		System.out.println("file is uploaded successfully");
+		driver.quit();;
+
+	}
+
+
+
+}

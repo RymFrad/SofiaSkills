@@ -6,7 +6,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 
-@CucumberOptions( features= "src\\test\\java\\features\\Authentification.feature",glue= "stepdefinitions")
+@CucumberOptions( features= "src\\test\\java\\features\\Aauthentification.feature",glue= "stepdefinitions")
 
 
 public class login_testRunner {

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="login_testRunner" project="my-app" tests="9" started="9" failures="0" errors="0" ignored="0">
+  <testsuite name="options.login_testRunner" time="72.888">
+    <testsuite name="Feature: Login functionlity" time="72.888">
+      <testcase name="Home page login ok" classname="Login functionlity" time="7.71"/>
+      <testcase name="Home page login Nok" classname="Login functionlity" time="6.955"/>
+      <testcase name="Invalid email" classname="Login functionlity" time="7.003"/>
+      <testcase name="Invalid password" classname="Login functionlity" time="7.003"/>
+      <testcase name="Incorrect password" classname="Login functionlity" time="7.011"/>
+      <testcase name="Inorrect email" classname="Login functionlity" time="7.016"/>
+      <testcase name="User can recover password" classname="Login functionlity" time="10.259"/>
+      <testcase name="User can not recover password with invalid email" classname="Login functionlity" time="9.966"/>
+      <testcase name="User can not recover password with no email" classname="Login functionlity" time="9.959"/>
+    </testsuite>
+  </testsuite>
+</testrun>

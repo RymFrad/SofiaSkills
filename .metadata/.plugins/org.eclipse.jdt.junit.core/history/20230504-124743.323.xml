@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="adduser_testRunner" project="my-app" tests="2" started="2" failures="2" errors="0" ignored="0">
+  <testsuite name="options.adduser_testRunner" time="10.972">
+    <testsuite name="Feature: Add User Functionality" time="10.972">
+      <testcase name="Add User Successfully" classname="Add User Functionality" time="5.859">
+        <failure>
+          <expected>Profile</expected>
+          <actual>Sofff</actual>
+          org.junit.ComparisonFailure: expected:&lt;[Profile]&gt; but was:&lt;[Sofff]&gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:115)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:144)&#13;
+	at stepdefinitions.adduser_stepdefinition.i_should_be_redirected_to_the_profile_page(adduser_stepdefinition.java:59)&#13;
+	at ✽.I should be redirected to the profile page(file:src/test/java/features/adduser.feature:7)&#13;
+&#13;
+
+        </failure>
+      </testcase>
+      <testcase name="Import User file Successfully" classname="Add User Functionality" time="5.112">
+        <failure>
+          <expected>Profile</expected>
+          <actual>Sofff</actual>
+          org.junit.ComparisonFailure: expected:&lt;[Profile]&gt; but was:&lt;[Sofff]&gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:115)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:144)&#13;
+	at stepdefinitions.adduser_stepdefinition.i_should_be_redirected_to_the_profile_page(adduser_stepdefinition.java:59)&#13;
+	at ✽.I should be redirected to the profile page(file:src/test/java/features/adduser.feature:22)&#13;
+&#13;
+
+        </failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

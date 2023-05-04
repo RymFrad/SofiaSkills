@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="login_testRunner" project="my-app" tests="9" started="9" failures="1" errors="7" ignored="0">
+  <testsuite name="options.login_testRunner" time="73.743">
+    <testsuite name="Feature: Login functionlity" time="73.743">
+      <testcase name="Home page login ok" classname="Login functionlity" time="8.427"/>
+      <testcase name="Home page login Nok" classname="Login functionlity" time="7.026">
+        <error>org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: unknown&#13;
+	at org.openqa.selenium.By$ByClassName.&lt;init&gt;(By.java:310)&#13;
+	at org.openqa.selenium.By.className(By.java:100)&#13;
+	at stepdefinitions.login_stepdefinition.error_message_is_shown(login_stepdefinition.java:76)&#13;
+	at ✽.Error message is shown "Address email or password incorrect"(file:src/test/java/features/Aauthentification.feature:13)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Invalid email" classname="Login functionlity" time="7.124">
+        <error>org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: unknown&#13;
+	at org.openqa.selenium.By$ByClassName.&lt;init&gt;(By.java:310)&#13;
+	at org.openqa.selenium.By.className(By.java:100)&#13;
+	at stepdefinitions.login_stepdefinition.error_message_is_shown(login_stepdefinition.java:76)&#13;
+	at ✽.Error message is shown "Email is required"(file:src/test/java/features/Aauthentification.feature:19)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Invalid password" classname="Login functionlity" time="7.021">
+        <error>org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: unknown&#13;
+	at org.openqa.selenium.By$ByClassName.&lt;init&gt;(By.java:310)&#13;
+	at org.openqa.selenium.By.className(By.java:100)&#13;
+	at stepdefinitions.login_stepdefinition.error_message_is_shown(login_stepdefinition.java:76)&#13;
+	at ✽.Error message is shown "Password is required"(file:src/test/java/features/Aauthentification.feature:25)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Incorrect password" classname="Login functionlity" time="7.039">
+        <error>org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: unknown&#13;
+	at org.openqa.selenium.By$ByClassName.&lt;init&gt;(By.java:310)&#13;
+	at org.openqa.selenium.By.className(By.java:100)&#13;
+	at stepdefinitions.login_stepdefinition.error_message_is_shown(login_stepdefinition.java:76)&#13;
+	at ✽.Error message is shown "Address email or password incorrect"(file:src/test/java/features/Aauthentification.feature:31)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Inorrect email" classname="Login functionlity" time="7.058">
+        <error>org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: unknown&#13;
+	at org.openqa.selenium.By$ByClassName.&lt;init&gt;(By.java:310)&#13;
+	at org.openqa.selenium.By.className(By.java:100)&#13;
+	at stepdefinitions.login_stepdefinition.error_message_is_shown(login_stepdefinition.java:76)&#13;
+	at ✽.Error message is shown "Must be a valid email address"(file:src/test/java/features/Aauthentification.feature:37)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="User can recover password" classname="Login functionlity" time="10.036">
+        <failure>
+          <expected>Sofia tech</expected>
+          <actual>email</actual>
+          org.junit.ComparisonFailure: expected:&lt;[Sofia tech]&gt; but was:&lt;[email]&gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:115)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:144)&#13;
+	at stepdefinitions.login_stepdefinition.an_email_is_sent_with_an_character_password(login_stepdefinition.java:137)&#13;
+	at ✽.An email is sent with an 8 character password(file:src/test/java/features/Aauthentification.feature:45)&#13;
+&#13;
+
+        </failure>
+      </testcase>
+      <testcase name="User can not recover password with invalid email" classname="Login functionlity" time="10.046">
+        <error>org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: unknown&#13;
+	at org.openqa.selenium.By$ByClassName.&lt;init&gt;(By.java:310)&#13;
+	at org.openqa.selenium.By.className(By.java:100)&#13;
+	at stepdefinitions.login_stepdefinition.error_message_is_shown(login_stepdefinition.java:76)&#13;
+	at ✽.Error message is shown "Must be a valid email address"(file:src/test/java/features/Aauthentification.feature:53)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="User can not recover password with no email" classname="Login functionlity" time="9.962">
+        <error>org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: unknown&#13;
+	at org.openqa.selenium.By$ByClassName.&lt;init&gt;(By.java:310)&#13;
+	at org.openqa.selenium.By.className(By.java:100)&#13;
+	at stepdefinitions.login_stepdefinition.error_message_is_shown(login_stepdefinition.java:76)&#13;
+	at ✽.Error message is shown "Email is required"(file:src/test/java/features/Aauthentification.feature:61)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="login_testRunner" project="my-app" tests="9" started="9" failures="1" errors="0" ignored="0">
+  <testsuite name="options.login_testRunner" time="73.082">
+    <testsuite name="Feature: Login functionlity" time="73.082">
+      <testcase name="Home page login ok" classname="Login functionlity" time="7.861"/>
+      <testcase name="Home page login Nok" classname="Login functionlity" time="6.986"/>
+      <testcase name="Invalid email" classname="Login functionlity" time="6.965"/>
+      <testcase name="Invalid password" classname="Login functionlity" time="7.113"/>
+      <testcase name="Incorrect password" classname="Login functionlity" time="7.031"/>
+      <testcase name="Inorrect email" classname="Login functionlity" time="7.158"/>
+      <testcase name="User can recover password" classname="Login functionlity" time="10.19">
+        <failure>
+          <expected>Sofia tech</expected>
+          <actual>email</actual>
+          org.junit.ComparisonFailure: expected:&lt;[Sofia tech]&gt; but was:&lt;[email]&gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:115)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:144)&#13;
+	at stepdefinitions.login_stepdefinition.an_email_is_sent_with_an_character_password(login_stepdefinition.java:122)&#13;
+	at ✽.An email is sent with an 8 character password(file:src/test/java/features/Aauthentification.feature:45)&#13;
+&#13;
+
+        </failure>
+      </testcase>
+      <testcase name="User can not recover password with invalid email" classname="Login functionlity" time="9.928"/>
+      <testcase name="User can not recover password with no email" classname="Login functionlity" time="9.849"/>
+    </testsuite>
+  </testsuite>
+</testrun>
