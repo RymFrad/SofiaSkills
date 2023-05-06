@@ -60,7 +60,7 @@ public  static WebDriver driver;
 	    } catch (AssertionError e) {
 	        // Capture d'écran en cas d'échec de l'assertion
 	        File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-	        File destDir = new File("C:\\Users\\user\\Desktop\\screenshots");
+	        File destDir = new File("C:\\Users\\user\\Desktop\\testautopfe\\screenshots");
 	        File destFile = new File(destDir, "screenshot3.png");
 	        FileUtils.copyFile(screenshotFile, destFile);
 	        // Rethrow l'exception pour signaler le test comme échoué
