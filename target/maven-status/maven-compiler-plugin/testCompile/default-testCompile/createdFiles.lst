@@ -1,0 +1,6 @@
+options\testRunner.class
+options\adduser_testRunner.class
+stepdefinitions\login_stepdefinition.class
+stepdefinitions\adduser_stepdefinition.class
+stepdefinitions\ScreenshotClass.class
+options\login_testRunner.class
