@@ -8,7 +8,6 @@ import cucumber.api.junit.Cucumber;
 
 @CucumberOptions( features= "src\\test\\java\\features\\adduser.feature",glue= "stepdefinitions")
 
-
 public class adduser_testRunner {
 
 }

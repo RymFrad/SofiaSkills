@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>test_forgetpassword</td>
+                          <td>1</td>
+                        <td>24 mai 2023, 16:01</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">adduser_stepdefinition.a_confirmation_window_should_be_open_with_a_message_Do_you_want_to_upload_this_file()</td>
+                <td>1</td>
+                <td class="duration" data-value="1500">000ms</td>
+                <td class="duration" data-value="1500">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">adduser_stepdefinition.a_message_should_be_displayed_saying_User_added_successfully()</td>
+                <td>1</td>
+                <td class="duration" data-value="4300">000ms</td>
+                <td class="duration" data-value="4300">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">adduser_stepdefinition.a_message_should_be_displayed_saying_file_is_uploaded_successfully()</td>
+                <td>1</td>
+                <td class="duration" data-value="1499">000ms</td>
+                <td class="duration" data-value="1499">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">adduser_stepdefinition.i_am_on_the_login_page()</td>
+                <td>2</td>
+                <td class="duration" data-value="3977624000">3s 977ms</td>
+                <td class="duration" data-value="1988812000">1s 988ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">adduser_stepdefinition.i_choose_an_excel_file_and_i_click_on_open_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="2400">000ms</td>
+                <td class="duration" data-value="2400">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">adduser_stepdefinition.i_click_Yes_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="1499">000ms</td>
+                <td class="duration" data-value="1499">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">adduser_stepdefinition.i_click_on_the_Submit_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="2799">000ms</td>
+                <td class="duration" data-value="2799">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">adduser_stepdefinition.i_click_on_the_User_Configuration_option()</td>
+                <td>2</td>
+                <td class="duration" data-value="12798">000ms</td>
+                <td class="duration" data-value="6399">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">adduser_stepdefinition.i_click_the_login_button()</td>
+                <td>2</td>
+                <td class="duration" data-value="4153958601">4s 153ms</td>
+                <td class="duration" data-value="2076979300">2s 076ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">adduser_stepdefinition.i_enter_in_the_First_Name_field_in_the_Last_Name_field_and_in_the_Email_Address_field(String,String,String)</td>
+                <td>1</td>
+                <td class="duration" data-value="10300">000ms</td>
+                <td class="duration" data-value="10300">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">adduser_stepdefinition.i_log_in_as_an_administrator_with_valid_email_and_a_valid_password(String,String)</td>
+                <td>2</td>
+                <td class="duration" data-value="2350323999">2s 350ms</td>
+                <td class="duration" data-value="1175161999">1s 175ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">adduser_stepdefinition.i_select_a_Company_from_the_Company_list()</td>
+                <td>1</td>
+                <td class="duration" data-value="3099">000ms</td>
+                <td class="duration" data-value="3099">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">adduser_stepdefinition.i_select_a_Department_from_the_Department_list()</td>
+                <td>1</td>
+                <td class="duration" data-value="2801">000ms</td>
+                <td class="duration" data-value="2801">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">adduser_stepdefinition.i_select_a_Function_from_the_Function_list()</td>
+                <td>1</td>
+                <td class="duration" data-value="5299">000ms</td>
+                <td class="duration" data-value="5299">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">adduser_stepdefinition.i_select_a_Role_from_the_Role_list1()</td>
+                <td>1</td>
+                <td class="duration" data-value="3200">000ms</td>
+                <td class="duration" data-value="3200">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">adduser_stepdefinition.i_select_the_Add_User_option()</td>
+                <td>1</td>
+                <td class="duration" data-value="6301">000ms</td>
+                <td class="duration" data-value="6301">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">adduser_stepdefinition.i_select_the_Import_file_option()</td>
+                <td>1</td>
+                <td class="duration" data-value="2600">000ms</td>
+                <td class="duration" data-value="2600">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">adduser_stepdefinition.i_should_be_redirected_to_the_profile_page()</td>
+                <td>2</td>
+                <td class="duration" data-value="660532401">660ms</td>
+                <td class="duration" data-value="330266200">330ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">login_stepdefinition.an_email_is_sent_with_an_character_password(Integer)</td>
+                <td>1</td>
+                <td class="duration" data-value="172001200">172ms</td>
+                <td class="duration" data-value="172001200">172ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">login_stepdefinition.error_message_is_shown(String)</td>
+                <td>7</td>
+                <td class="duration" data-value="1181396100">1s 181ms</td>
+                <td class="duration" data-value="168770871">168ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">login_stepdefinition.i_click_in_login_button()</td>
+                <td>6</td>
+                <td class="duration" data-value="18377319699">18s 377ms</td>
+                <td class="duration" data-value="3062886616">3s 062ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">login_stepdefinition.i_click_on_the_Forgot_password_button1()</td>
+                <td>3</td>
+                <td class="duration" data-value="9297766000">9s 297ms</td>
+                <td class="duration" data-value="3099255333">3s 099ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">login_stepdefinition.i_click_on_the_submit_button()</td>
+                <td>3</td>
+                <td class="duration" data-value="9269138401">9s 269ms</td>
+                <td class="duration" data-value="3089712800">3s 089ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">login_stepdefinition.i_enter_email_address(String)</td>
+                <td>3</td>
+                <td class="duration" data-value="6246093701">6s 246ms</td>
+                <td class="duration" data-value="2082031233">2s 082ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">login_stepdefinition.i_enter_in_the_user_name_field_and_in_the_passwrd_field(String,String)</td>
+                <td>6</td>
+                <td class="duration" data-value="12950660099">12s 950ms</td>
+                <td class="duration" data-value="2158443349">2s 158ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">login_stepdefinition.i_redirected_to_the_password_recovery_page()</td>
+                <td>3</td>
+                <td class="duration" data-value="18342599">018ms</td>
+                <td class="duration" data-value="6114199">006ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">login_stepdefinition.i_should_be_in_profile_page()</td>
+                <td>1</td>
+                <td class="duration" data-value="219235100">219ms</td>
+                <td class="duration" data-value="219235100">219ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">login_stepdefinition.i_visit_login_page()</td>
+                <td>9</td>
+                <td class="duration" data-value="20754511699">20s 754ms</td>
+                <td class="duration" data-value="2306056855">2s 306ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>28</td>
+              <td>65</td>
+              <td class="duration">1m 29s 628ms</td>
+              <td class="duration">1s 378ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

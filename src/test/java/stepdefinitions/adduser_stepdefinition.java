@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+
 import java.io.File;
 import java.io.IOException;
 
@@ -19,8 +20,9 @@ import cucumber.api.java.en.And;
 
 
 
-public class adduser_stepdefinition {
+public class adduser_stepdefinition  {
 public  static WebDriver driver; 
+
 
 	@Given("I am on the login page")
 	public void i_am_on_the_login_page() {
@@ -39,10 +41,7 @@ public  static WebDriver driver;
 		  WebElement getinputpwd =  driver.findElement(By.id("password"));
 		  getinputpwd.sendKeys(pwd);
 		  
-		  //File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		  //File destDir = new File("C:\\Users\\user\\Desktop\\screenshots");
-		  //File destFile = new File(destDir, "screenshot.png");
-		  //FileUtils.copyFile(screenshotFile, destFile);
+		 
 	}
 
 	@When("I click the login button")
@@ -51,12 +50,15 @@ public  static WebDriver driver;
 	    Thread.sleep(1000);
 	    getbutton.click();
 	    Thread.sleep(1000);
+	  
 	}
 
 	@Then("I should be redirected to the profile page")
-	public void i_should_be_redirected_to_the_profile_page() throws IOException  {
+	public void i_should_be_redirected_to_the_profile_page() throws IOException, InterruptedException  {
 		try {
-			Assert.assertEquals(driver.getTitle(),"Profile" );
+			Assert.assertEquals(driver.getTitle(),"Sofia tech" );
+		    Thread.sleep(2000);
+
 	    } catch (AssertionError e) {
 	        // Capture d'écran en cas d'échec de l'assertion
 	        File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
@@ -205,7 +207,10 @@ public  static WebDriver driver;
 	@Then("a message should be displayed saying file is uploaded successfully.")
 	public void a_message_should_be_displayed_saying_file_is_uploaded_successfully() {
 		System.out.println("file is uploaded successfully");
-		driver.quit();;
+		driver.quit();
 
 	}
+	
+	
+	
 }

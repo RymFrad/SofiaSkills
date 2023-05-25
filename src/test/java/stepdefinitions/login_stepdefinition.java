@@ -10,6 +10,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -21,8 +23,9 @@ import org.openqa.selenium.TakesScreenshot;
 
 public class login_stepdefinition {
 public  static WebDriver driver; 
-	
+
 	@Given("I visit login page")
+	
 	public void i_visit_login_page() throws IOException {
 	  System.setProperty("webdriver.chrome.driver" , System.getProperty("user.dir")+"\\chromedriver.exe");
 	  driver = new ChromeDriver(); 	
@@ -31,6 +34,7 @@ public  static WebDriver driver;
 }
 
 	@When("I enter {string} in the user name field and {string} in the passwrd field")
+	
 	public void i_enter_in_the_user_name_field_and_in_the_passwrd_field(String email, String pwd) throws InterruptedException, IOException{
 	  WebElement getinputemail =  driver.findElement(By.id("email"));
 	  getinputemail.sendKeys(email);
@@ -42,6 +46,7 @@ public  static WebDriver driver;
   }
 	
 
+	
 	@When("I click in login button")
 	public void i_click_in_login_button() throws InterruptedException {
 	    WebElement getbutton = driver.findElement(By.xpath("//button[@type='submit']"));
@@ -140,6 +145,10 @@ public  static WebDriver driver;
 	        // Rethrow l'exception pour signaler le test comme échoué
 	        throw e;
 	    }
-		driver.quit();;
+	
+	 driver.quit();
+	
+	}
+	
 
-	}}
+}

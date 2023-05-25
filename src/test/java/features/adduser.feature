@@ -1,5 +1,5 @@
 Feature: Add User Functionality
-
+@smoke
 Scenario: Add User Successfully
 Given I am on the login page
 When I log in as an administrator with valid email "taib.maaoui@gmail.com" and a valid password "sJ4rL7om"
@@ -14,6 +14,8 @@ And I select a Department from the Department list
 And I select a Function from the Function list
 And I click on the Submit button
 Then a message should be displayed saying User added successfully.
+
+@smoke
 
 Scenario: Import User file Successfully
 Given I am on the login page
