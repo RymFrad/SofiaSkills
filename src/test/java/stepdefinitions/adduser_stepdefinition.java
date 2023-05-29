@@ -56,7 +56,7 @@ public  static WebDriver driver;
 	@Then("I should be redirected to the profile page")
 	public void i_should_be_redirected_to_the_profile_page() throws IOException, InterruptedException  {
 		try {
-			Assert.assertEquals(driver.getTitle(),"Sofia tech" );
+			Assert.assertEquals(driver.getTitle(),"Profile" );
 		    Thread.sleep(2000);
 
 	    } catch (AssertionError e) {
