@@ -24,13 +24,15 @@
   </properties>
   
   <dependencies>
-	  
+	 
 	  <dependency>
         <groupId>org.testng</groupId>
         <artifactId>testng</artifactId>
         <version>7.8.0</version>
         <scope>test</scope>
     </dependency>
+    
+   
 	  
 	<dependency>
     	<groupId>org.junit.jupiter</groupId>
@@ -95,9 +97,9 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>test_forgetpassword</projectName>
-                            <outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
-                            <cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
+                            <projectName>my-app</projectName>
+                            <outputDirectory>target/cucumber-report-html</outputDirectory>
+                            <cucumberOutput>target/cucumber.json</cucumberOutput>
                         </configuration>
                     </execution>
                 </executions>

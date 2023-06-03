@@ -4,782 +4,6 @@
     "elements": [
       {
         "line": 4,
-        "name": "Home page login ok",
-        "description": "",
-        "id": "login-functionlity;home-page-login-ok",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 2968034400,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "I visit login page",
-            "match": {
-              "location": "login_stepdefinition.i_visit_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2170395600,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I enter \" taib.maaoui@gmail.com\" in the user name field and \"sJ4rL7om\" in the passwrd field",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\" taib.maaoui@gmail.com\"",
-                  "offset": 8
-                },
-                {
-                  "val": "\"sJ4rL7om\"",
-                  "offset": 60
-                }
-              ],
-              "location": "login_stepdefinition.i_enter_in_the_user_name_field_and_in_the_passwrd_field(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3086524900,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I click in login button",
-            "match": {
-              "location": "login_stepdefinition.i_click_in_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 207475200,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "I should be in profile page",
-            "match": {
-              "location": "login_stepdefinition.i_should_be_in_profile_page()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoke"
-          }
-        ]
-      },
-      {
-        "line": 11,
-        "name": "Home page login Nok",
-        "description": "",
-        "id": "login-functionlity;home-page-login-nok",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 14401818200,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "I visit login page",
-            "match": {
-              "location": "login_stepdefinition.i_visit_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2165927300,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "I enter \"email\" in the user name field and \"sJ4rL7ok\" in the passwrd field",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"email\"",
-                  "offset": 8
-                },
-                {
-                  "val": "\"sJ4rL7ok\"",
-                  "offset": 43
-                }
-              ],
-              "location": "login_stepdefinition.i_enter_in_the_user_name_field_and_in_the_passwrd_field(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3068373000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "I click in login button",
-            "match": {
-              "location": "login_stepdefinition.i_click_in_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 168933700,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "Error message is shown \"Address email or password incorrect\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Address email or password incorrect\"",
-                  "offset": 23
-                }
-              ],
-              "location": "login_stepdefinition.error_message_is_shown(String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoke"
-          }
-        ]
-      },
-      {
-        "line": 18,
-        "name": "Invalid email",
-        "description": "",
-        "id": "login-functionlity;invalid-email",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1852269200,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "I visit login page",
-            "match": {
-              "location": "login_stepdefinition.i_visit_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2143824400,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "I enter \"test.test@gmail.com\" in the user name field and \"sJ4rL7om\" in the passwrd field",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"test.test@gmail.com\"",
-                  "offset": 8
-                },
-                {
-                  "val": "\"sJ4rL7om\"",
-                  "offset": 57
-                }
-              ],
-              "location": "login_stepdefinition.i_enter_in_the_user_name_field_and_in_the_passwrd_field(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3068892200,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "I click in login button",
-            "match": {
-              "location": "login_stepdefinition.i_click_in_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 184856300,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "Error message is shown \"Email is required\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Email is required\"",
-                  "offset": 23
-                }
-              ],
-              "location": "login_stepdefinition.error_message_is_shown(String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoke"
-          }
-        ]
-      },
-      {
-        "line": 25,
-        "name": "Invalid password",
-        "description": "",
-        "id": "login-functionlity;invalid-password",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 2031213000,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "I visit login page",
-            "match": {
-              "location": "login_stepdefinition.i_visit_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2151133000,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "I enter \"taib.maaoui@gmail.com\" in the user name field and \"pw2dvo55fdsdfqs\" in the passwrd field",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"taib.maaoui@gmail.com\"",
-                  "offset": 8
-                },
-                {
-                  "val": "\"pw2dvo55fdsdfqs\"",
-                  "offset": 59
-                }
-              ],
-              "location": "login_stepdefinition.i_enter_in_the_user_name_field_and_in_the_passwrd_field(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3061443400,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "I click in login button",
-            "match": {
-              "location": "login_stepdefinition.i_click_in_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 138783300,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "Error message is shown \"Password is required\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Password is required\"",
-                  "offset": 23
-                }
-              ],
-              "location": "login_stepdefinition.error_message_is_shown(String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoke"
-          }
-        ]
-      },
-      {
-        "line": 32,
-        "name": "Incorrect password",
-        "description": "",
-        "id": "login-functionlity;incorrect-password",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1844463200,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "I visit login page",
-            "match": {
-              "location": "login_stepdefinition.i_visit_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2177451600,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "I enter \"taib.maaoui@gmail.com\" in the user name field and \"ml4rL7ok\" in the passwrd field",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"taib.maaoui@gmail.com\"",
-                  "offset": 8
-                },
-                {
-                  "val": "\"ml4rL7ok\"",
-                  "offset": 59
-                }
-              ],
-              "location": "login_stepdefinition.i_enter_in_the_user_name_field_and_in_the_passwrd_field(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3073102600,
-              "status": "passed"
-            },
-            "line": 35,
-            "name": "I click in login button",
-            "match": {
-              "location": "login_stepdefinition.i_click_in_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 124314200,
-              "status": "passed"
-            },
-            "line": 36,
-            "name": "Error message is shown \"Address email or password incorrect\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Address email or password incorrect\"",
-                  "offset": 23
-                }
-              ],
-              "location": "login_stepdefinition.error_message_is_shown(String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoke"
-          }
-        ]
-      },
-      {
-        "line": 39,
-        "name": "Inorrect email",
-        "description": "",
-        "id": "login-functionlity;inorrect-email",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1654995400,
-              "status": "passed"
-            },
-            "line": 40,
-            "name": "I visit login page",
-            "match": {
-              "location": "login_stepdefinition.i_visit_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2144286500,
-              "status": "passed"
-            },
-            "line": 41,
-            "name": "I enter \"test.test\" in the user name field and \"sJ4rL7om\" in the passwrd field",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"test.test\"",
-                  "offset": 8
-                },
-                {
-                  "val": "\"sJ4rL7om\"",
-                  "offset": 47
-                }
-              ],
-              "location": "login_stepdefinition.i_enter_in_the_user_name_field_and_in_the_passwrd_field(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3042200200,
-              "status": "passed"
-            },
-            "line": 42,
-            "name": "I click in login button",
-            "match": {
-              "location": "login_stepdefinition.i_click_in_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 185200300,
-              "status": "passed"
-            },
-            "line": 43,
-            "name": "Error message is shown \"Must be a valid email address\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Must be a valid email address\"",
-                  "offset": 23
-                }
-              ],
-              "location": "login_stepdefinition.error_message_is_shown(String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoke"
-          }
-        ]
-      },
-      {
-        "line": 46,
-        "name": "User can recover password",
-        "description": "",
-        "id": "login-functionlity;user-can-recover-password",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1767379000,
-              "status": "passed"
-            },
-            "line": 47,
-            "name": "I visit login page",
-            "match": {
-              "location": "login_stepdefinition.i_visit_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3084401400,
-              "status": "passed"
-            },
-            "line": 48,
-            "name": "I click on the Forgot password button",
-            "match": {
-              "location": "login_stepdefinition.i_click_on_the_Forgot_password_button1()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 7761200,
-              "status": "passed"
-            },
-            "line": 49,
-            "name": "I redirected to the password recovery page",
-            "match": {
-              "location": "login_stepdefinition.i_redirected_to_the_password_recovery_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2081489400,
-              "status": "passed"
-            },
-            "line": 50,
-            "name": "I enter email address \"user@sofia-technologies.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"user@sofia-technologies.com\"",
-                  "offset": 22
-                }
-              ],
-              "location": "login_stepdefinition.i_enter_email_address(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3082450600,
-              "status": "passed"
-            },
-            "line": 51,
-            "name": "I click on the submit button",
-            "match": {
-              "location": "login_stepdefinition.i_click_on_the_submit_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 186245400,
-              "status": "passed"
-            },
-            "line": 52,
-            "name": "An email is sent with an 8 character password",
-            "match": {
-              "arguments": [
-                {
-                  "val": "8",
-                  "offset": 25
-                }
-              ],
-              "location": "login_stepdefinition.an_email_is_sent_with_an_character_password(Integer)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoke"
-          }
-        ]
-      },
-      {
-        "line": 55,
-        "name": "User can not recover password with invalid email",
-        "description": "",
-        "id": "login-functionlity;user-can-not-recover-password-with-invalid-email",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1950349800,
-              "status": "passed"
-            },
-            "line": 56,
-            "name": "I visit login page",
-            "match": {
-              "location": "login_stepdefinition.i_visit_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3086531700,
-              "status": "passed"
-            },
-            "line": 57,
-            "name": "I click on the Forgot password button",
-            "match": {
-              "location": "login_stepdefinition.i_click_on_the_Forgot_password_button1()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 5698500,
-              "status": "passed"
-            },
-            "line": 58,
-            "name": "I redirected to the password recovery page",
-            "match": {
-              "location": "login_stepdefinition.i_redirected_to_the_password_recovery_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2082530000,
-              "status": "passed"
-            },
-            "line": 59,
-            "name": "I enter email address \"user@example.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"user@example.com\"",
-                  "offset": 22
-                }
-              ],
-              "location": "login_stepdefinition.i_enter_email_address(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3069214800,
-              "status": "passed"
-            },
-            "line": 60,
-            "name": "I click on the submit button",
-            "match": {
-              "location": "login_stepdefinition.i_click_on_the_submit_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 154525900,
-              "status": "passed"
-            },
-            "line": 61,
-            "name": "Error message is shown \"Must be a valid email address\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Must be a valid email address\"",
-                  "offset": 23
-                }
-              ],
-              "location": "login_stepdefinition.error_message_is_shown(String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoke"
-          }
-        ]
-      },
-      {
-        "line": 64,
-        "name": "User can not recover password with no email",
-        "description": "",
-        "id": "login-functionlity;user-can-not-recover-password-with-no-email",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 2128920300,
-              "status": "passed"
-            },
-            "line": 65,
-            "name": "I visit login page",
-            "match": {
-              "location": "login_stepdefinition.i_visit_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3093415800,
-              "status": "passed"
-            },
-            "line": 66,
-            "name": "I click on the Forgot password button",
-            "match": {
-              "location": "login_stepdefinition.i_click_on_the_Forgot_password_button1()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 6371600,
-              "status": "passed"
-            },
-            "line": 67,
-            "name": "I redirected to the password recovery page",
-            "match": {
-              "location": "login_stepdefinition.i_redirected_to_the_password_recovery_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2056003700,
-              "status": "passed"
-            },
-            "line": 68,
-            "name": "I enter email address \"\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"\"",
-                  "offset": 22
-                }
-              ],
-              "location": "login_stepdefinition.i_enter_email_address(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3069312600,
-              "status": "passed"
-            },
-            "line": 69,
-            "name": "I click on the submit button",
-            "match": {
-              "location": "login_stepdefinition.i_click_on_the_submit_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 154266100,
-              "status": "passed"
-            },
-            "line": 70,
-            "name": "Error message is shown \"Email is required\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Email is required\"",
-                  "offset": 23
-                }
-              ],
-              "location": "login_stepdefinition.error_message_is_shown(String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoke"
-          }
-        ]
-      }
-    ],
-    "name": "Login functionlity",
-    "description": "",
-    "id": "login-functionlity",
-    "keyword": "Feature",
-    "uri": "file:src/test/java/features/Aauthentification.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "line": 3,
         "name": "Add User Successfully",
         "description": "",
         "id": "add-user-functionality;add-user-successfully",
@@ -788,10 +12,10 @@
         "steps": [
           {
             "result": {
-              "duration": 2063821600,
+              "duration": 3500315900,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "I am on the login page",
             "match": {
               "location": "adduser_stepdefinition.i_am_on_the_login_page()"
@@ -800,10 +24,10 @@
           },
           {
             "result": {
-              "duration": 1145686800,
+              "duration": 1145867100,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "I log in as an administrator with valid email \"taib.maaoui@gmail.com\" and a valid password \"sJ4rL7om\"",
             "match": {
               "arguments": [
@@ -822,10 +46,10 @@
           },
           {
             "result": {
-              "duration": 2061388900,
+              "duration": 2056484600,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "I click the login button",
             "match": {
               "location": "adduser_stepdefinition.i_click_the_login_button()"
@@ -834,11 +58,11 @@
           },
           {
             "result": {
-              "error_message": "org.junit.ComparisonFailure: expected:\u003cProfil[e]\u003e but was:\u003cProfil[]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat stepdefinitions.adduser_stepdefinition.i_should_be_redirected_to_the_profile_page(adduser_stepdefinition.java:59)\r\n\tat ✽.I should be redirected to the profile page(file:src/test/java/features/adduser.feature:7)\r\n",
-              "duration": 316982500,
+              "error_message": "org.junit.ComparisonFailure: expected:\u003cProfil[e]\u003e but was:\u003cProfil[]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat stepdefinitions.adduser_stepdefinition.i_should_be_redirected_to_the_profile_page(adduser_stepdefinition.java:67)\r\n\tat ✽.I should be redirected to the profile page(file:src/test/java/features/adduser.feature:8)\r\n",
+              "duration": 316023100,
               "status": "failed"
             },
-            "line": 7,
+            "line": 8,
             "name": "I should be redirected to the profile page",
             "match": {
               "location": "adduser_stepdefinition.i_should_be_redirected_to_the_profile_page()"
@@ -847,10 +71,10 @@
           },
           {
             "result": {
-              "duration": 8700,
+              "duration": 6600,
               "status": "skipped"
             },
-            "line": 8,
+            "line": 9,
             "name": "I click on the User Configuration option",
             "match": {
               "location": "adduser_stepdefinition.i_click_on_the_User_Configuration_option()"
@@ -859,10 +83,10 @@
           },
           {
             "result": {
-              "duration": 2700,
+              "duration": 3400,
               "status": "skipped"
             },
-            "line": 9,
+            "line": 10,
             "name": "I select the Add User option",
             "match": {
               "location": "adduser_stepdefinition.i_select_the_Add_User_option()"
@@ -871,10 +95,10 @@
           },
           {
             "result": {
-              "duration": 2000,
+              "duration": 2600,
               "status": "skipped"
             },
-            "line": 10,
+            "line": 11,
             "name": "I enter \"First\" in the First Name field \"Last\" in the Last Name field and \"testsofapp@yopmail.com\" in the Email Address field",
             "match": {
               "arguments": [
@@ -897,10 +121,10 @@
           },
           {
             "result": {
-              "duration": 1800,
+              "duration": 2500,
               "status": "skipped"
             },
-            "line": 11,
+            "line": 12,
             "name": "I select a Role from the Role list",
             "match": {
               "location": "adduser_stepdefinition.i_select_a_Role_from_the_Role_list1()"
@@ -909,10 +133,10 @@
           },
           {
             "result": {
-              "duration": 1700,
+              "duration": 2500,
               "status": "skipped"
             },
-            "line": 12,
+            "line": 13,
             "name": "I select a Company from the Company list",
             "match": {
               "location": "adduser_stepdefinition.i_select_a_Company_from_the_Company_list()"
@@ -921,10 +145,10 @@
           },
           {
             "result": {
-              "duration": 1600,
+              "duration": 2500,
               "status": "skipped"
             },
-            "line": 13,
+            "line": 14,
             "name": "I select a Department from the Department list",
             "match": {
               "location": "adduser_stepdefinition.i_select_a_Department_from_the_Department_list()"
@@ -933,10 +157,10 @@
           },
           {
             "result": {
-              "duration": 3200,
+              "duration": 2500,
               "status": "skipped"
             },
-            "line": 14,
+            "line": 15,
             "name": "I select a Function from the Function list",
             "match": {
               "location": "adduser_stepdefinition.i_select_a_Function_from_the_Function_list()"
@@ -945,10 +169,10 @@
           },
           {
             "result": {
-              "duration": 1700,
+              "duration": 2600,
               "status": "skipped"
             },
-            "line": 15,
+            "line": 16,
             "name": "I click on the Submit button",
             "match": {
               "location": "adduser_stepdefinition.i_click_on_the_Submit_button()"
@@ -957,10 +181,10 @@
           },
           {
             "result": {
-              "duration": 3200,
+              "duration": 2300,
               "status": "skipped"
             },
-            "line": 16,
+            "line": 17,
             "name": "a message should be displayed saying User added successfully.",
             "match": {
               "location": "adduser_stepdefinition.a_message_should_be_displayed_saying_User_added_successfully()"
@@ -971,11 +195,14 @@
         "tags": [
           {
             "name": "@smoke"
+          },
+          {
+            "name": "@after"
           }
         ]
       },
       {
-        "line": 20,
+        "line": 22,
         "name": "Import User file Successfully",
         "description": "",
         "id": "add-user-functionality;import-user-file-successfully",
@@ -984,10 +211,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1594300500,
+              "duration": 1690137400,
               "status": "passed"
             },
-            "line": 21,
+            "line": 23,
             "name": "I am on the login page",
             "match": {
               "location": "adduser_stepdefinition.i_am_on_the_login_page()"
@@ -996,10 +223,10 @@
           },
           {
             "result": {
-              "duration": 1148450500,
+              "duration": 1175016400,
               "status": "passed"
             },
-            "line": 22,
+            "line": 24,
             "name": "I log in as an administrator with valid email \"taib.maaoui@gmail.com\" and a valid password \"sJ4rL7om\"",
             "match": {
               "arguments": [
@@ -1018,10 +245,10 @@
           },
           {
             "result": {
-              "duration": 2088871600,
+              "duration": 2113725300,
               "status": "passed"
             },
-            "line": 23,
+            "line": 25,
             "name": "I click the login button",
             "match": {
               "location": "adduser_stepdefinition.i_click_the_login_button()"
@@ -1030,11 +257,11 @@
           },
           {
             "result": {
-              "error_message": "org.junit.ComparisonFailure: expected:\u003cProfil[e]\u003e but was:\u003cProfil[]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat stepdefinitions.adduser_stepdefinition.i_should_be_redirected_to_the_profile_page(adduser_stepdefinition.java:59)\r\n\tat ✽.I should be redirected to the profile page(file:src/test/java/features/adduser.feature:24)\r\n",
-              "duration": 300277900,
+              "error_message": "org.junit.ComparisonFailure: expected:\u003cProfil[e]\u003e but was:\u003cProfil[]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat stepdefinitions.adduser_stepdefinition.i_should_be_redirected_to_the_profile_page(adduser_stepdefinition.java:67)\r\n\tat ✽.I should be redirected to the profile page(file:src/test/java/features/adduser.feature:26)\r\n",
+              "duration": 337813900,
               "status": "failed"
             },
-            "line": 24,
+            "line": 26,
             "name": "I should be redirected to the profile page",
             "match": {
               "location": "adduser_stepdefinition.i_should_be_redirected_to_the_profile_page()"
@@ -1043,10 +270,10 @@
           },
           {
             "result": {
-              "duration": 4000,
+              "duration": 7500,
               "status": "skipped"
             },
-            "line": 25,
+            "line": 27,
             "name": "I click on the User Configuration option",
             "match": {
               "location": "adduser_stepdefinition.i_click_on_the_User_Configuration_option()"
@@ -1055,10 +282,10 @@
           },
           {
             "result": {
-              "duration": 3900,
+              "duration": 3000,
               "status": "skipped"
             },
-            "line": 26,
+            "line": 28,
             "name": "I select the Import file option",
             "match": {
               "location": "adduser_stepdefinition.i_select_the_Import_file_option()"
@@ -1067,10 +294,10 @@
           },
           {
             "result": {
-              "duration": 2600,
+              "duration": 2500,
               "status": "skipped"
             },
-            "line": 27,
+            "line": 29,
             "name": "I choose an excel file and i click on open button",
             "match": {
               "location": "adduser_stepdefinition.i_choose_an_excel_file_and_i_click_on_open_button()"
@@ -1079,10 +306,10 @@
           },
           {
             "result": {
-              "duration": 1700,
+              "duration": 2600,
               "status": "skipped"
             },
-            "line": 28,
+            "line": 30,
             "name": "A confirmation window should be open with a message Do you want to upload this file",
             "match": {
               "location": "adduser_stepdefinition.a_confirmation_window_should_be_open_with_a_message_Do_you_want_to_upload_this_file()"
@@ -1091,10 +318,10 @@
           },
           {
             "result": {
-              "duration": 1600,
+              "duration": 2600,
               "status": "skipped"
             },
-            "line": 29,
+            "line": 31,
             "name": "I click Yes button",
             "match": {
               "location": "adduser_stepdefinition.i_click_Yes_button()"
@@ -1103,10 +330,10 @@
           },
           {
             "result": {
-              "duration": 1600,
+              "duration": 2700,
               "status": "skipped"
             },
-            "line": 30,
+            "line": 32,
             "name": "a message should be displayed saying file is uploaded successfully.",
             "match": {
               "location": "adduser_stepdefinition.a_message_should_be_displayed_saying_file_is_uploaded_successfully()"
@@ -1117,6 +344,9 @@
         "tags": [
           {
             "name": "@smoke"
+          },
+          {
+            "name": "@after"
           }
         ]
       }
